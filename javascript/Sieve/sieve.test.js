@@ -4,6 +4,7 @@ describe("Sieve", () => {
   test("valid results", () => {
     const sieve = new Sieve();
     expect(sieve.NthPrime(0)).toBe(2);
+    expect(sieve.NthPrime(1)).toBe(3);
     expect(sieve.NthPrime(19)).toBe(71);
     expect(sieve.NthPrime(99)).toBe(541);
     expect(sieve.NthPrime(500)).toBe(3581);
