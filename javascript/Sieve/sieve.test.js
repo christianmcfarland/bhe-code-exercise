@@ -13,6 +13,9 @@ describe("Sieve", () => {
     expect(sieve.NthPrime(2000)).toBe(17393);
     expect(sieve.NthPrime(1000000)).toBe(15485867);
     expect(sieve.NthPrime(10000000)).toBe(179424691);
+    // The optional challenge below would be pushing the limits of JavaScript even in a node.js environment, let alone a browser
+    // Based on my research, an implementation of the Miller Rabin primality test would be a good option here
+    // Would probably have a better chance using C++ or Java
     // expect(sieve.NthPrime(100000000)).toBe(2038074751); // not required, just a fun challenge
   });
 });
